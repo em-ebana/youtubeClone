@@ -1,0 +1,44 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+p{
+    font-family: 'roboto',arial;
+}
+.thumbnail{
+    width: 300px;
+    display: block;
+    
+}
+.video-preview{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-right: 15px;
+    
+}
+.vert-desc{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+}
+.vert-image{
+    margin-bottom: 15px;
+}
+
+.img-image{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.desc-title{
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.desc-owner,.desc-stats{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}
