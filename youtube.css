@@ -2,23 +2,117 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     
+}
+body{
+    padding-top: 80px;
+    padding-left: 9.5rem;
+}
+.icons{
+    
+    height: 40px;
+    object-fit: cover;
+   
+}
+.header-nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(141, 137, 137);
+    padding: 20px 0px;
+}
+.sidebar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 9rem;
+    background-color: black;
+}
+.page-title{
+    display: flex;
+    align-items: center;    
+    width: 200px;   
+}
+
+.search-bar{  
+    flex: 1;
+    margin-right: 30px;
+    margin-left: 70px;
+    max-width:  400px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-search{
+    flex: 1;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    height: 36px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 20px;
+    width: 0;
+}
+.icon-search::placeholder{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    
+}
+.icon1{
+    width: 60px;
+    height: 35px;
+    margin-left: -10px;
+    margin-right: 20px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 2px; 
+}
+
+.icon1 img{
+    width: 100%;
+    object-fit: contain;
+    height: 30px;
+    margin-top: 3px; 
+    background-color: #fff; 
+    
+    
+}
+.icon2 img{
+    height: 30px;
+}
+.icon-grp{
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.icons3,.icons4,.icons5{
+    height: 28px;
+}
+.icons6{
+    height: 32px;
 }
 p{
     font-family: 'roboto',arial;
 }
 .thumbnail{
-    width: 300px;
-    display: block;
-    
+    width: 100%;
 }
-.video-preview{
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
-    margin-right: 15px;
-    
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 30px;
 }
+
 .vert-desc{
     display: grid;
     grid-template-columns: 50px 1fr;
