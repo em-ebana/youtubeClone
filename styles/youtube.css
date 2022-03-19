@@ -8,6 +8,7 @@
 body{
     padding-top: 80px;
     padding-left: 9.5rem;
+    padding-right: 0.5rem;
 }
 .icons{
     
@@ -26,15 +27,9 @@ body{
     background-color: #fff;
     border-bottom: 1px solid rgb(141, 137, 137);
     padding: 20px 0px;
+    z-index: 1000;
 }
-.sidebar{
-    position: fixed;
-    top: 60px;
-    left: 0;
-    bottom: 0;
-    width: 9rem;
-    background-color: black;
-}
+
 .page-title{
     display: flex;
     align-items: center;    
@@ -101,7 +96,7 @@ body{
     height: 32px;
 }
 p{
-    font-family: 'roboto',arial;
+    font-family: 'Roboto',arial;
 }
 .thumbnail{
     width: 100%;
@@ -112,7 +107,29 @@ p{
     column-gap: 16px;
     row-gap: 30px;
 }
+@media(min-width:350px) and (max-width: 600px){
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media(min-width:601px) and (max-width:850px){
+    .main-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+@media(min-width:851px) and (max-width: 1199px){
+    .main-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width: 1200px){
+    .main-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 .vert-desc{
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -120,6 +137,7 @@ p{
 }
 .vert-image{
     margin-bottom: 15px;
+    position: relative;
 }
 
 .img-image{
@@ -135,4 +153,15 @@ p{
     font-size: 12px;
     font-weight: 500;
     margin-top: 5px;
+}
+.video-time{
+    background-color: black;color: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 18px;
+    bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 4px;
+    border-radius: 2px;
 }

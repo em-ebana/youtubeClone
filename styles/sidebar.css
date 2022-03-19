@@ -1,0 +1,22 @@
+.sidebar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 9rem;
+    
+}
+.side-icon-container img{
+    height: 24px ;
+}
+
+.side-icon-container{
+    padding-top: 25px;
+    flex-shrink: 0;
+    display: flex;
+    height: 80%;
+    text-align: center;
+   align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
